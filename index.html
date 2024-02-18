@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (min-width:0px) and (max-width:500px)
+        {      
+        .bg{
+            background-color: orange;
+            border: 1px solid black;
+            display: grid;
+            gap:20px;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            border: 1px solid black;
+            background-color: green;
+            height:50px;
+            width:150px; 
+        } 
+    }
+    @media screen and (min-width:500px) and (max-width:1000px){
+        .bg{
+            /* height: 300px;
+            width:550px; */
+            display:grid;
+            grid-template-columns: repeat(6,auto);
+            grid-template-rows: 100px 100px;
+            gap:10px;
+           padding: 100px; 
+        }
+        .box{
+            border: 1px solid black;
+            background-color: red;
+            gap:10px;
+        }
+        .one{
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 1;
+            grid-row-end: 5;
+            border-radius: 10px;
+        }
+        .two{
+            grid-column-start: 2;
+            grid-column-end: 5;
+            /* grid-row-start: 1;
+            grid-row-end: ; */
+            border-radius: 10px;
+        }
+        .three {
+            grid-row-start: 2;
+            grid-row-end: 5;
+            border-radius: 10px;
+        }
+        .four {
+            grid-row-start: 2;
+            grid-row-end: 5;
+            border-radius: 10px;
+        }
+        .five {
+            grid-row-start: 2;
+            grid-row-end: 5;
+            border-radius: 10px;
+        }
+        .six {
+            grid-row-start: 3;
+            grid-row-end: 5;
+            border-radius: 10px;
+        }
+    }
+    @media screen and (min-width:1000px) and (max-width:2560px)
+    {
+        .bg{
+            border: 1px solid black;
+            background-color: aqua;
+            display: grid;
+            grid-template-columns: repeat(3,auto);
+            height:200px;
+            gap:10px;
+        }
+        .box{
+            border: 2px solid black;
+            background-color:rebeccapurple;
+        }
+        .one{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            
+        }
+        .two{
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        .three{
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        .five{
+            grid-column-start: 2;
+            grid-column-end:4;
+        }
+        .bg img{
+            display: none;
+        }
+    }
+        
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <div class="box one">one</div>
+        <div class="box two">Two</div>
+        <div class="box three">Three</div>
+        <div class="box four">Four</div>
+        <div class="box five">Five</div>
+
+    </div>
+</body>
+</html>
